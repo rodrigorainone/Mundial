@@ -1,0 +1,174 @@
+/*reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+body{
+    height: 100vh;
+}
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/fondo.jpg);    
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+#contenedor{
+
+    margin-top: 80px;    
+    width: 550px;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    background-color: white;
+    height: 820px;
+    
+}
+
+#contenedor h1{
+   margin-top: 50px;
+   margin-bottom: 20px;
+   color:#8d1c3d;
+}
+
+#partido1,#partido2,#partido3,#partido4,#partido5,#partido6{
+    display: flex;   
+    justify-content: space-between;    
+    height: 30px;
+    align-items: flex-end; 
+    
+    
+}
+
+#partido1 img,#partido2 img,#partido3 img,#partido4 img,#partido5 img,#partido6 img{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+#partido1 input,#partido2 input,#partido3 input,#partido4 input,#partido5 input,#partido6 input{
+    height: 30px;
+    width: 30px;    
+    background-color: #757474;
+    border: solid 1px black;
+    border-radius: 5px;
+    color:white;
+    padding-left: 10px;
+    
+
+}
+
+#partido1 input:focus,#partido2 input:focus,#partido3 input:focus,#partido4 input:focus,#partido5 input:focus,#partido6 input:focus{
+    
+    outline: none;
+}
+#tabla{
+    margin-top: 10px;
+    display: flex;   
+    width: 500px;
+    justify-content: space-between;
+    
+}
+
+.nombres{
+    display: flex;
+    gap:5px;
+    background-color: silver;
+    height: 25px;
+    width: 207px;
+    align-items: center; 
+    border-radius: 5px;
+   
+    
+}
+
+.nombres2{
+    display: flex;
+    gap:5px;
+    background-color: silver;
+    height: 25px;
+    width: 207px;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+
+#subcontenedor span{
+    margin:auto;
+    display:table;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+}
+
+#calcular{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    width: 80px;
+    height: 30px;
+}
+
+.planilla{
+    margin-top: 40px;
+    color:#8d1c3d;    
+    display: flex;    
+    justify-content:flex-end;
+    gap: 12px;    
+    width: 500px;
+}
+
+table img{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;    
+}
+
+table{
+    margin-bottom: 5px;
+    border-radius: 5px;
+    
+    
+}
+
+
+
+.thImg{
+    width: 50px;
+}
+
+.thNombre{
+    width: 202px;
+    text-align: left;
+}
+
+.thPJ{
+    width: 25px;
+}
+.nada{
+    width: 62px;
+}
+
+.planilla table th{
+    width: 25px;
+}
+
+.colorQatar{
+    background-color: #8d1c3d;
+}
+
+#tablaEvent0,#tablaEvent1,#tablaEvent2,#tablaEvent3{
+    font-size: small;
+}
