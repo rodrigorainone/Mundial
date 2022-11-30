@@ -177,36 +177,43 @@ table{
 
 @media (min-width: 1px) and (max-width: 599px) {
    #contenedor{
-    width: 550px;
+    width: 520px;
    }
    .nombres,.nombres2{
-    width: 180px;
+    width: 150px;
    }
 
    .thImg{
-    width: 42.5px;
+    width: 38.5px;
 }
 
 .thNombre{
-    width: 171px;
+    width: 140px;
     text-align: left;
 }
 
 .thPJ{
-    width: 21px;
+    width: 17px;
 }
 .nada{
-    width: 63px;
+    width: 58px;
 }
 
 .planilla table th{
-    width: 21px;
+    width: 17px;
 }
 .planilla{
-    width: 425px;
+    width: 370px;
+    font-size: 12px;
 }
 main {
     background-image:none;
 }
-
+#partido1,#partido2,#partido3,#partido4,#partido5,#partido6{
+    width: 370px;
+}
+span{
+    font-size: 12px;
+    
+}
 }
