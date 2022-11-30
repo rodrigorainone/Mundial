@@ -123,10 +123,11 @@ main{
 .planilla{
     margin-top: 40px;
     color:#8d1c3d;    
-    display: flex;    
+    display: none;    
     justify-content:flex-end;
     gap: 12px;    
     width: 500px;
+
 }
 
 table img{
@@ -172,3 +173,4 @@ table{
 #tablaEvent0,#tablaEvent1,#tablaEvent2,#tablaEvent3{
     font-size: small;
 }
+

@@ -180,12 +180,12 @@ getCalcular.onclick = (e)=>{
                 return 0;
     });
     
-    
+    const getPlanilla =document.querySelector(".planilla");
     const getEvent = document.querySelector("#event");
-
+    
     getEvent.innerHTML="";
     equipos1.forEach((element,index) => {
-        
+        getPlanilla.style.display= "flex";
         getEvent.innerHTML+=`
 
            <table id="tablaEvent${index}">
