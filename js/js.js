@@ -195,9 +195,11 @@ getCalcular.onclick = (e)=>{
                         <th class="nada"></th>
                         <th class="thPJ">${element.PJ}</th>                       
                         <th class="thPJ">${element.PG}</th>
+                        <th class="thPJ">${element.PE}</th>
                         <th class="thPJ">${element.PP}</th>
                         <th class="thPJ">${element.GF}</th>
                         <th class="thPJ">${element.GC}</th>
+                        <th class="thPJ">${element.Dif}</th>
                         <th class="thPJ">${element.Pts}</th>
                     </tr>
             </table>
