@@ -174,3 +174,39 @@ table{
     font-size: small;
 }
 
+
+@media (min-width: 1px) and (max-width: 599px) {
+   #contenedor{
+    width: 550px;
+   }
+   .nombres,.nombres2{
+    width: 180px;
+   }
+
+   .thImg{
+    width: 42.5px;
+}
+
+.thNombre{
+    width: 171px;
+    text-align: left;
+}
+
+.thPJ{
+    width: 21px;
+}
+.nada{
+    width: 63px;
+}
+
+.planilla table th{
+    width: 21px;
+}
+.planilla{
+    width: 425px;
+}
+main {
+    background-image:none;
+}
+
+}
