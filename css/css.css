@@ -8,27 +8,27 @@
 
 body{
     height: 100vh;
+    background-image: url(../img/fondo.jpg); 
 }
 
 
 
 main{
     display: flex;
-    justify-content: center;
-    background-image: url(../img/fondo.jpg);    
+    justify-content: center;      
     height: 100%;
     background-repeat: no-repeat;
 }
 
 #contenedor{
 
-    margin-top: 80px;    
+    margin-top: 70px;    
     width: 550px;
     display: flex;
     flex-direction: column;    
     align-items: center;
     background-color: white;
-    height: 820px;
+    height: 780px;
     
 }
 
