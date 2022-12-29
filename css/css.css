@@ -176,6 +176,9 @@ table{
 
 
 @media (min-width: 1px) and (max-width: 599px) {
+    body {
+        background-color: white;
+    }
    #contenedor{
     width: 520px;
    }
