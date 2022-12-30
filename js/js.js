@@ -80,10 +80,20 @@ function PaisesVs (Pais1,Pais2,GolPais1,GolPais2){
 
 }
 
+function checkNumero (numero) {                             // para checkear que sea solo numeros
+    if (/^[0-9]+$/.test(numero)){        
+        return true
+    }
+    return false
+}
+
+
 
 const getInputs = document.querySelectorAll('#contenedor input');
 
 const getCalcular= document.querySelector('#calcular');
+const getPlanilla =document.querySelector(".planilla");
+const getEvent = document.querySelector("#event");
 
 getCalcular.onclick = (e)=>{
     e.preventDefault(); 
@@ -102,6 +112,7 @@ getCalcular.onclick = (e)=>{
     let arabiaSauditaP1 = document.querySelector("#arabiaSaudita1").value;
     let arabiaSauditaP2 = document.querySelector("#arabiaSaudita2").value;
     let arabiaSauditaP3 = document.querySelector("#arabiaSaudita3").value;
+
 
     
 
@@ -136,7 +147,7 @@ getCalcular.onclick = (e)=>{
     }
 
 */
-
+if ( checkNumero (arabiaSauditaP1) && checkNumero (arabiaSauditaP2) && checkNumero (arabiaSauditaP3) &&  checkNumero(poloniaP1)&&  checkNumero(poloniaP2) &&  checkNumero(poloniaP3) && checkNumero(mexicoP1) && checkNumero(mexicoP2) && checkNumero(mexicoP3) && checkNumero(argetinaP1) && checkNumero(argetinaP2) && checkNumero(argetinaP3)){
 
 
         PaisesVs(argentina,arabiaSaudita,argetinaP1,arabiaSauditaP1);
@@ -178,43 +189,46 @@ getCalcular.onclick = (e)=>{
                 return 1;
             else 
                 return 0;
-    });
+    });   
+
     
-    const getPlanilla =document.querySelector(".planilla");
-    const getEvent = document.querySelector("#event");
-    
+       
     getEvent.innerHTML="";
-    equipos1.forEach((element,index) => {
-        getPlanilla.style.display= "flex";
-        getEvent.innerHTML+=`
-
-           <table id="tablaEvent${index}">
-                    <tr>
-                        <th class="thImg"><img src="${element.img}" alt=""></th>
-                        <th class="thNombre">${element.nombre}</th>
-                        <th class="nada"></th>
-                        <th class="thPJ">${element.PJ}</th>                       
-                        <th class="thPJ">${element.PG}</th>
-                        <th class="thPJ">${element.PE}</th>
-                        <th class="thPJ">${element.PP}</th>
-                        <th class="thPJ">${element.GF}</th>
-                        <th class="thPJ">${element.GC}</th>
-                        <th class="thPJ">${element.Dif}</th>
-                        <th class="thPJ">${element.Pts}</th>
-                    </tr>
-            </table>
-                            `
-        console.log(index);
-        if ((index==0) || (index==1)){
-            document.getElementById(`tablaEvent${index}`).setAttribute("bgColor","#8d1c3d");
-            document.getElementById(`tablaEvent${index}`).style.color = "white";
-        }        
-        else{
-            document.getElementById(`tablaEvent${index}`).setAttribute("bgColor","silver");
-        }
-    });    
+        equipos1.forEach((element,index) => {
+            getPlanilla.style.display= "flex";
+            getEvent.innerHTML+=`
     
+               <table id="tablaEvent${index}">
+                        <tr>
+                            <th class="thImg"><img src="${element.img}" alt=""></th>
+                            <th class="thNombre">${element.nombre}</th>
+                            <th class="nada"></th>
+                            <th class="thPJ">${element.PJ}</th>                       
+                            <th class="thPJ">${element.PG}</th>
+                            <th class="thPJ">${element.PE}</th>
+                            <th class="thPJ">${element.PP}</th>
+                            <th class="thPJ">${element.GF}</th>
+                            <th class="thPJ">${element.GC}</th>
+                            <th class="thPJ">${element.Dif}</th>
+                            <th class="thPJ">${element.Pts}</th>
+                        </tr>
+                </table>
+                                `
+            console.log(index);
+            if ((index==0) || (index==1)){
+                document.getElementById(`tablaEvent${index}`).setAttribute("bgColor","#8d1c3d");
+                document.getElementById(`tablaEvent${index}`).style.color = "white";
+            }        
+            else{
+                document.getElementById(`tablaEvent${index}`).setAttribute("bgColor","silver");
+            }
+        });    
 
+    
+    
+    
+    /* se vuelve a poner en cero para restartear cuando apretas y no vuelva a sumar . */
+    
     polonia = {
         nombre:"Polonia",
         img:"./img/bandera polonia.png",
@@ -263,6 +277,16 @@ getCalcular.onclick = (e)=>{
         Dif:0,
         Pts:0
     };
+    }
+    else{
+        getEvent.innerHTML="";
+        getPlanilla.style.display= "none";        
+        getEvent.innerHTML=`<div class="divMessi">
+                            <img class="picMessi"src="./img/messi.png" alt="">
+                            <p class="subMessi">Completa todo y solo con numeros</p></div>`;
+        
+    }
+   
 }
    
     

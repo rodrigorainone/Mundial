@@ -173,8 +173,18 @@ table{
 #tablaEvent0,#tablaEvent1,#tablaEvent2,#tablaEvent3{
     font-size: small;
 }
-
-
+.divMessi{
+    text-align: center;
+}
+.picMessi{
+    width: 200px;
+    height: 200px;
+}
+.subMessi {
+    font-weight: bold;
+    font-size: 15px;
+    color:#8d1c3d;
+}
 @media (min-width: 1px) and (max-width: 599px) {
     body {
         background-image: none;
